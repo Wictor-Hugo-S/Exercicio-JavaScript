@@ -1,7 +1,7 @@
+
 const numero=document.querySelector("#n1")
 const btn=document.querySelector("#button")
 const result=document.querySelector("#resultado")
-
 
 
 btn.onclick=()=>{
@@ -39,11 +39,9 @@ const contagemDeNumero=(n1)=>{
            return array.push( indice + 1)
        }
        
-
     })
     
     return array.join()
 
-    
    
 }

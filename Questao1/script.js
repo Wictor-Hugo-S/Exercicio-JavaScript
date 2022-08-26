@@ -1,3 +1,4 @@
+
 const ladoA=document.querySelector("#ladoA")
 const ladoB=document.querySelector("#ladoB")
 const ladoC=document.querySelector("#ladoC")
@@ -18,7 +19,7 @@ btn.onclick=()=>{
     }
     
     else{
-        resultado.innerHTML=calcularTriangulo(ladoA.value, ladoB.value, ladoC.value)
+        resultado.innerHTML=calcularTriangulo( ladoA.value, ladoB.value, ladoC.value )
     }
 }
 
@@ -27,20 +28,19 @@ const calcularTriangulo=(ladoA,ladoB,ladoC)=>{
     ladoB=Number.parseInt(ladoB)
     ladoC=Number.parseInt(ladoC)
 
-    if ( ladoA<ladoB+ladoC && ladoB<ladoA+ladoC && ladoC < ladoA +ladoB) {
-        if (ladoA == ladoB && ladoB== ladoC) {
-        return "TRIANGULO EQUILÁTERO"
+    if ( ladoA < ladoB + ladoC && ladoB < ladoA + ladoC && ladoC < ladoA + ladoB ) {
+        if ( ladoA == ladoB && ladoB == ladoC ) {
+            return "TRIANGULO EQUILAATERO"
         }
-        else if (ladoA == ladoB || ladoA == ladoC || ladoC == ladoB)  {
-            return "TRIANGULO ISÓSCELES"
+        else if ( ladoA == ladoB || ladoA == ladoC || ladoC == ladoB )  {
+            return "TRIANGULO ISOSCELES"
         }
-         else if (ladoA != ladoB && ladoA != ladoC) {
+         else if ( ladoA != ladoB && ladoA != ladoC ) {
             return "TRIANGULO ESCALENO"
         }
-       
     }
     else {
-        return" NÃO É UM TRIANGULO"
+        return "NAO E UM TRIANGULO"
         }
 
 }
